@@ -16,9 +16,9 @@ import org.apache.derby.drda.NetworkServerControl;
 
 public class HighScores implements Runnable{
     Thread t;
-    static String dbLocation = "jdbc:derby://localhost/C://Users//james//AppData//Roaming//NetBeans//Derby//HighScores";
-    static String dbUsername = "snakeApp";
-    static String dbPassword = "dbpassword";
+    static String dbLocation = ;
+    static String dbUsername = ;
+    static String dbPassword = ;
     private void startServer() throws Exception{
         NetworkServerControl server = new NetworkServerControl(InetAddress.getByName("localhost"),1527);
         server.start(new PrintWriter(System.out,true));
